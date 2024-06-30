@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Sustain",
+  "version": "1.0",
+  "description": "Sustain helps you have a positive impact on the earth by shopping more sustainably. Save money while saving the earth with discounts and incentives for eco-friendly purchases.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "128": "favicon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/*"
+      ],
+      "js": [
+        "assets/index-lqkCkDKi.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "favicon.png"
+  }
+}

@@ -1,0 +1,5 @@
+gen
+node_modules
+schema
+package-lock.json
+.github/workflows

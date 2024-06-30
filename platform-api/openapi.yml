@@ -1,0 +1,27 @@
+openapi: 3.0.1
+info:
+  title: Sustain Backend
+  version: v1
+
+servers:
+  - url: http://localhost:8080
+    description: Local server
+  - url: https://api.dap.money
+    description: Production server
+
+security:
+  - bearerAuth: [ ]
+
+paths:
+  # todo:
+  test:
+    
+
+
+components:
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT  # optional, for documentation purposes only
